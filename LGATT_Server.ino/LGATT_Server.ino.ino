@@ -35,7 +35,7 @@ void loop() {
 
       //to send read data from sensor    
       String data_string = String(data_reading);
-      const char *str = data_string.c_str();
+      const char *str = data_string.c_str();//to convert to standard c format 
       value.len = strlen(str);
       memcpy(value.value, str, value.len);
   
